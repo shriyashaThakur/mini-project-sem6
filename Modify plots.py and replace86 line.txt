@@ -1,0 +1,13 @@
+Modify plots.py and replace:86 line
+
+Edit
+w, h = self.font.getsize(label)
+with:
+w, h = self.font.getbbox(label)[2:4]  # Use getbbox() instead
+
+.................................................................................................................................................................
+in data.yaml change last three lines 
+
+train: /content/yolov9/ANPR2-8/train/images
+val: /content/yolov9/ANPR2-8/valid/images
+test: /content/yolov9/ANPR2-8/test/images
